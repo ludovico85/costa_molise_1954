@@ -3,7 +3,7 @@
 <head>
     <meta charset=utf-8 />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' />
-    <title>Soutbeach</title>
+    <title>Costa Molise 1954</title>
     <script src='leaflet.js'></script>
     <script src="leaflet-side-by-side.js"></script>
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
@@ -29,12 +29,12 @@
     <script>
     var map = L.map('map',
 	{
-	minZoom: 15,
-    maxZoom: 18,
-	maxBounds: [[42.02365185,14.78900980], [42.07313957,14.88359174]],
+	minZoom: 13,
+    maxZoom: 17,
+	maxBounds: [[42.09413,14.76086], [41.90698,15.13885]],
 	
 	fullscreenControl:true
-	}).setView([42.04610744, 14.82800196, ], 15);
+	}).setView([42.00003,14.99611, ], 13);
 	
 	/*/var southWest = L.latLng(13.95, 14.20),
 	northEast = L.latLng(41.64, 41.84);
@@ -50,7 +50,7 @@
     }).addTo(map);
 
     // Overlay (tiles layer TMS locale)
-	var lyr = L.tileLayer('south_tiles/{z}/{x}/{y}.png', {
+	var lyr = L.tileLayer('costa54_tiles/{z}/{x}/{y}.png', {
         tms: false, 
 	//opacity: 1,
 	}).addTo(map);
